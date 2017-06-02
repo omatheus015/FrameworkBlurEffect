@@ -16,6 +16,7 @@ public class CustomClass: NSObject {
             if !blurEffectView.isDescendant(of: image) {
                 blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
                 blurEffectView.frame = image.frame
+                //blurEffectView.bounds = image.bounds
                 //blurEffectView.center = image.center
                 blurEffectView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
                 
